@@ -686,7 +686,7 @@
       
       <div class="btn-group">
         <button class="btn dress-btn" id="dressButton">Dress up 🦔</button>
-        <div class="price-tag hidden" id="priceTag">25000$</div>
+        <div class="price-tag hidden" id="priceTag">20000$</div>
       </div>
     </div>
 
@@ -855,7 +855,7 @@
       }
 
       function updatePriceTag() {
-        if (money >= 25000) {
+        if (money >= 20000) {
           priceTag.className = 'price-tag affordable';
         } else {
           priceTag.className = 'price-tag expensive';
@@ -1379,8 +1379,8 @@
 
       function dressHedgehogs() {
         if (!huntActive) return;
-        if (money >= 25000 && !hatsUnlocked) {
-          money -= 25000;
+        if (money >= 20000 && !hatsUnlocked) {
+          money -= 20000;
           hatsUnlocked = true;
           updateMoneyCounter();
           
